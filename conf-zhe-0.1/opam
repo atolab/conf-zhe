@@ -1,0 +1,18 @@
+opam-version: "1.2"
+name: "conf-zhe"
+authors: ["Angelo Corsaro"]
+version: "0.1"
+maintainer: "angelo@icorsaro.net"
+homepage: "http://www.icorsaro.net"
+license: "LGPL"
+build: [
+  "cc" "./files/test.c" "-I/usr/local/include/zhe" "-L/usr/local/lib" "-ldzhe"
+]
+depexts: [
+  [["alpine"] ["libdzhe"]]
+  [["centos"] ["libdzhe"]]
+  [["debian"] ["libdzhe"]]
+  [["fedora"] ["libdzhe"]]
+  [["osx"] ["libdzhe"]]
+  [["ubuntu"] ["libdzhe"]]
+]
